@@ -10,7 +10,8 @@ class GeneratePDF {
 
     public function fillExistingPDF($fakeDataFields) {
 
-        $pdf = new Pdf(dirname(__FILE__).'/PDF_template/certificat_garantie_form.pdf');
+        // Make sur to add read the pdf on existing folder
+        $pdf = new Pdf(dirname(__FILE__).'/PDF_template/your-template-PDF.pdf');
 
         // add method to construct your file name
         $filename = 'pdf_'.rand(1, 1000).'.pdf';
