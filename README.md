@@ -49,7 +49,8 @@ Feel free to get more informations about the library here : https://github.com/m
 
 Here an example how to edit form inside PDF using ADOBE acrobate and how to edit field name
 
-![[data_fields.png]]
+![alt text](https://github.com/charley04310/Generate-PDF-php/blob/main/data_fields.png)
+
 
 # Basic usage of PDF generator
 
