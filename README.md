@@ -45,49 +45,22 @@ next you can check to `vendor/mikehaertl` if the folder exist
 
 Feel free to get more informations about the library here : https://github.com/mikehaertl/php-pdftk
 
-## Create PDF form
+## Install library to fill image into existing PDF
+
+next you can check to `vendor/codedge` if the folder exist
+
+```bash
+composer require codedge/laravel-fpdf
+```
+
+Feel free to get more informations about the library here : https://github.com/codedge/laravel-fpdf
+
+## Create PDF form using Adobe ACROBATE
 
 Here an example how to edit form inside PDF using ADOBE acrobate and how to edit field name
 
 ![alt text](https://github.com/charley04310/Generate-PDF-php/blob/main/data_fields.png)
 
+## Example of basic usage of both library link together
 
-# Basic usage of PDF generator
-
-Here an example of laravel project above
-
-```php
-    use mikehaertl\pdftk\Pdf;
-
-    class GeneratePDF {
-    public function fillExistingPDF($fakeDataFields) {
-
-    $pdf = new Pdf(dirname(__FILE__).'/PDF_template/example_of_pdf.pdf');
-    // add method to construct your file name
-    $filename = 'pdf_'.rand(1, 1000).'.pdf';
-    // fill the form created on your pdf editor
-    $result = $pdf
-    ->fillForm($fakeDataFields)
-    // save the PDF file to completed folder
-    ->saveAs(dirname(__FILE__).'/completed/'.$filename);
-
-    if ($result === false) {
-        return $pdf->getError();
-    }
-        return 'PDF saved to file system : at '. dirname(__FILE__).'/completed/'.$filename;
-    }
-    }
-```
-
-here an example of fake data colletion to interact with the fields expected
-
-```php
-    $fakeDataFields = [
-        'numero_commande' => '1297BJHeft543mPo',
-        'date_commande' => '2021-01-01',
-        'company_name' => 'Terrassteel',
-        'full_adress_company' => '1234 Main Street',
-        'full_name_customer' => 'John Doe',
-        'surface_terrasse' => '100m2',
-    ];
-```
+[Link text Here](https://github.com/charley04310/Generate-PDF-php/blob/main/app/Models/GeneratePDF.php)
