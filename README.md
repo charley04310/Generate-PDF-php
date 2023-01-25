@@ -27,6 +27,14 @@ here an example how you can add it to your composer file :
     },
 ```
 
+## Install Laravel
+
+you can install Laravel by using this command
+
+```bash
+composer require laravel/laravel
+```
+
 ## Install PDFTK server
 
 ```bash
