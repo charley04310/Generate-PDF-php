@@ -63,4 +63,4 @@ Here an example how to edit form inside PDF using ADOBE acrobate and how to edit
 
 ## Example of basic usage of both library link together
 
-[Link text Here](https://github.com/charley04310/Generate-PDF-php/blob/main/app/Models/GeneratePDF.php)
+Find an example of basic usage [here](https://github.com/charley04310/Generate-PDF-php/blob/main/app/Models/GeneratePDF.php)
