@@ -29,7 +29,7 @@ here an example how you can add it to your composer file :
 
 ## Install Laravel
 
-you can install Laravel by using this command
+you can install Laravel by using this command or Clone the code Above
 
 ```bash
 composer require laravel/laravel
